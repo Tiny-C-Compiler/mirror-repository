@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3   # https://github.com/marketplace/actions/checkout
         with:
+          repository: 'tcc-mirror-repository'
           persist-credentials: false
 
       - name: repo-sync
