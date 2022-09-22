@@ -1,3 +1,4 @@
+# checkout@v3: checks-out/downloads your repository under $GITHUB_WORKSPACE with fetch-depth: 1, so your workflow can access it. 
 on:
   schedule:
     - cron: '*/15 * * * *'
@@ -9,10 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3   # https://github.com/marketplace/actions/checkout
         with:
-          repository: 'Tiny-C-Compiler/repo.or.cz-tinycc' # Must be Public Repository
-          fetch-depth: 0
           persist-credentials: false
-
+          #repository: 'Tiny-C-Compiler/repo.or.cz-tinycc' # Must be Public Repository
+          #fetch-depth: 0
+          
       - name: repo-sync
         uses: repo-sync/github-sync@v2   # https://github.com/marketplace/actions/github-repo-sync
         with:
