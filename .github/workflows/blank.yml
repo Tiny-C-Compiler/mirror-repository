@@ -3,6 +3,9 @@ on:
     - cron: '*/15 * * * *'
   workflow_dispatch:
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
