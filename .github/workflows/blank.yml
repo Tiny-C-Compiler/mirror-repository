@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3   # https://github.com/marketplace/actions/checkout
         with:
-          repository: 'Tiny-C-Compiler/tcc-mirror-repository-original'
+          repository: 'Tiny-C-Compiler/repo.or.cz-tinycc'
           persist-credentials: false
 
       - name: repo-sync
