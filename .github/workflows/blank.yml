@@ -17,4 +17,4 @@ jobs:
           source_repo: 'https://repo.or.cz/tinycc.git'
           source_branch: 'mob'
           destination_branch: 'mob'
-          github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
