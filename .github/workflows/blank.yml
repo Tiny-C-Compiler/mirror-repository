@@ -9,7 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3   # https://github.com/marketplace/actions/checkout
         with:
-          repository: 'Tiny-C-Compiler/repo.or.cz-tinycc'
+          repository: 'Tiny-C-Compiler/repo.or.cz-tinycc' # Must be Public Repository
+          
           persist-credentials: false
 
       - name: repo-sync
