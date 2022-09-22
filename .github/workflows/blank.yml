@@ -13,8 +13,6 @@ jobs:
 
       - name: repo-sync
         uses: repo-sync/github-sync@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           source_repo: 'https://repo.or.cz/tinycc.git'
           source_branch: 'mob'
