@@ -3,9 +3,6 @@ on:
     - cron: '*/15 * * * *'
   workflow_dispatch:
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
@@ -20,4 +17,4 @@ jobs:
           source_repo: 'https://repo.or.cz/tinycc.git'
           source_branch: 'mob'
           destination_branch: 'mob'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PAT }}
