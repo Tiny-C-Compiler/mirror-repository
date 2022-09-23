@@ -18,6 +18,6 @@ jobs:
         uses: repo-sync/github-sync@v2   # https://github.com/marketplace/actions/github-repo-sync
         with:
           source_repo: 'https://repo.or.cz/tinycc.git'
-          source_branch: 'mob'
-          destination_branch: 'mob'
+          source_branch: '*'
+          destination_branch: '*'
           github_token: ${{ secrets.GITHUB_TOKEN }}
