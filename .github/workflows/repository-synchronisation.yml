@@ -19,5 +19,6 @@ jobs:
         with:
           source_repo: 'https://repo.or.cz/tinycc.git'
           source_branch: '*'
+          destination_repo: "Tiny-C-Compiler/testing-mirror-repository.git"
           destination_branch: '*'
           github_token: ${{ secrets.GITHUB_TOKEN }}
